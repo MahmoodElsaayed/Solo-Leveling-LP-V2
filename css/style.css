@@ -78,6 +78,44 @@ nav img {
     min-width: 200px;
     height: auto;
     opacity: 80%;
+    border-radius: 10px;
+}
+
+
+/* The about section's layout */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.about-container.special-box {
+    border-radius: 5px;
+    padding: 10px 0px;
+}
+
+.about-container .cards-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-container .card {
+    flex: 0 1 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.about-container .text-box {
+    text-align: center;
+    font-size: medium;
+}
+.about-container img{ 
+    width: 100%;
+    height: auto;
+    opacity: 80%;
+    border-radius: 10px;
 }
 
 
