@@ -1,0 +1,21 @@
+/* the entire page's layout */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.5;
+    font-family: 'Nanum Gothic';
+}
+
+#live-background {
+    z-index: 0;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
