@@ -12,10 +12,67 @@ body {
 }
 
 #live-background {
-    z-index: 0;
+    z-index: -1;
     position: fixed;
     right: 0;
     bottom: 0;
     min-width: 100%; 
     min-height: 100%;
+}
+
+
+
+/* the page's content layout */
+.content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+}
+
+
+
+/* The navbar's layout */
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+nav li {
+    flex: 0 1 100px;
+}
+
+nav .logo {
+    margin-right: auto;
+}
+
+nav img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* re-usable rulesets */
+.special-box {
+    background-image: linear-gradient(to bottom right, rgba(175, 0, 175, 0.6), rgba(0, 0, 77, 0.4));
+    padding: 16px 40px;
+}
+
+.special-text {
+    color: white;
+    font-size: 24px;
+    font-weight: 550;
+    text-shadow:
+    0 0 7px #00f,
+    0 0 10px #00d,
+    0 0 21px #00b,
+    0 0 42px #009,
+    0 0 82px #007,
+    0 0 92px #005,
+    0 0 102px #003,
+    0 0 151px #001;
 }
