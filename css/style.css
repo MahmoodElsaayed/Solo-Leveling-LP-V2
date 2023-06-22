@@ -94,12 +94,11 @@ nav img {
     border-radius: 5px;
     padding: 10px 0px;
 }
-
 .about-container .cards-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 10%;
 }
-
 .about-container .card {
     flex: 0 1 8%;
     display: flex;
@@ -119,9 +118,21 @@ nav img {
 }
 
 
+/* cta-section's layout */
+.cta-container {
+    width: 80%;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: last baseline;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+
 /* re-usable rulesets */
 .special-box {
-    background-image: linear-gradient(to bottom right, rgba(122, 0, 122, 0.6), rgba(0, 0, 77, 0.5));
+    background-image: linear-gradient(to top right, rgba(63, 7, 63, 0.6), rgba(0, 0, 77, 0.8));
     padding: 16px 40px;
 }
 .special-text {
