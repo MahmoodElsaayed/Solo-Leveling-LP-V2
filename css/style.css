@@ -2,15 +2,15 @@
 * {
     box-sizing: border-box;
 }
-
 body {
     min-height: 100vh;
     margin: 0px;
     padding: 0px;
     line-height: 1.5;
     font-family: 'Nanum Gothic';
+    font-size: medium;
+    color: white;
 }
-
 #live-background {
     z-index: -1;
     position: fixed;
@@ -21,14 +21,12 @@ body {
 }
 
 
-
 /* the page's content layout */
 .content-container {
     display: flex;
     flex-direction: column;
     gap: 200px;
 }
-
 
 
 /* The navbar's layout */
@@ -40,29 +38,56 @@ nav ul {
     padding: 0px;
     list-style-type: none;
 }
-
 nav li {
     flex: 0 1 100px;
 }
-
 nav .logo {
     margin-right: auto;
 }
-
 nav img {
     width: 100%;
     height: auto;
 }
 
 
+/* The hero section layout */
+.hero-container {
+    width: 85%;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    align-items: center;    
+}
+.hero-container.special-box {
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+.hero-container .text-box {
+    flex: 0 1 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.hero-container .image-box {
+    flex: 0 1 40%;
+}
+.hero-container img {
+    width: 100%;
+    min-width: 200px;
+    height: auto;
+    opacity: 80%;
+}
+
 
 /* re-usable rulesets */
 .special-box {
-    background-image: linear-gradient(to bottom right, rgba(175, 0, 175, 0.6), rgba(0, 0, 77, 0.4));
+    background-image: linear-gradient(to bottom right, rgba(122, 0, 122, 0.6), rgba(0, 0, 77, 0.5));
     padding: 16px 40px;
 }
-
 .special-text {
+    margin: 0px;
     color: white;
     font-size: 24px;
     font-weight: 550;
@@ -75,4 +100,12 @@ nav img {
     0 0 92px #005,
     0 0 102px #003,
     0 0 151px #001;
+}
+.special-button {
+    font-size: inherit;
+    padding: 8px 18px;
+    border: 3px solid white;
+    background-image: linear-gradient(to bottom right, rgba(175, 0, 175, 0.5), rgba(0, 0, 77, 0.3));
+    border-radius: 30px;
+    text-decoration: none;
 }
